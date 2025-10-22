@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Categories | B2D Admin</title>
+  <meta name="description" content="Organise menu categories.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/utilities.css">
+</head>
+<body>
+  <div class="main-wrapper">
+    <header class="site-header">
+      <div class="primary-nav container">
+        <a href="../index.html" class="logo">
+          <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20600%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27grad%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23FFF7F2%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23FFE0D6%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%27800%27%20height%3D%27600%27%20fill%3D%27url%28%23grad%29%27/%3E%0A%20%20%3Cg%20fill%3D%27%23FFFFFF%27%20opacity%3D%270.75%27%3E%0A%20%20%20%20%3Crect%20x%3D%2790%27%20y%3D%27110%27%20width%3D%27620%27%20height%3D%27380%27%20rx%3D%2748%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27290%27%20text-anchor%3D%27middle%27%20font-family%3D%27%22Anton%22%2C%20%22Montserrat%20Alternates%22%2C%20sans-serif%27%20font-size%3D%27110%27%20fill%3D%27%23D12D2D%27%3EB2D%3C/text%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27360%27%20text-anchor%3D%27middle%27%20font-family%3D%27Inter%2C%20system-ui%2C%20sans-serif%27%20font-size%3D%2738%27%20fill%3D%27%23FFB703%27%3EKitchen%20Placeholder%3C/text%3E%0A%3C/svg%3E" alt="B2D KITCHEN logo">
+          <span><strong>B2D Admin</strong></span>
+        </a>
+        <div class="nav-actions">
+          <span class="badge">Admin</span>
+          <button class="icon-button">✕</button>
+        </div>
+      </div>
+    </header>
+    <div class="container admin-shell">
+      <aside class="admin-nav">
+          <a href="dashboard.html">Dashboard</a>
+          <a href="orders.html">Orders</a>
+          <a href="menu-items.html">Menu Items</a>
+          <a href="categories.html">Categories</a>
+          <a href="inventory.html">Inventory</a>
+          <a href="coupons.html">Coupons</a>
+          <a href="customers.html">Customers</a>
+          <a href="delivery.html">Delivery</a>
+          <a href="reservations.html">Reservations</a>
+          <a href="content.html">Content</a>
+          <a href="media.html">Media</a>
+          <a href="users-roles.html">Users & Roles</a>
+          <a href="settings.html">Settings</a>
+      </aside>
+      <main class="admin-main stack-lg">
+
+        <header class="stack-md"><h1>Categories</h1><p class="muted">Define category taxonomy and display order.</p></header>
+        <section class="card stack-md">
+          <div class="table-wrapper">
+            <table class="table" data-admin-table="categories">
+              <thead><tr><th>Name</th><th>Icon</th><th>Description</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="container footer-bottom">
+        <span>© <span id="year"></span> B2D KITCHEN.</span>
+        <span>Powered by B2D Control</span>
+      </div>
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="../js/data.js"></script>
+  <script src="../js/analytics.js"></script>
+  <script src="../js/ui.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/admin.js"></script>
+</body>
+</html>

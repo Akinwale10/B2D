@@ -58,19 +58,31 @@ window.B2D = window.B2D || {};
   function initSearch() {
     const searchInput = document.querySelector('[data-search-input]');
     if (!searchInput) return;
+    const searchForm = searchInput.closest('form');
+
+    function commitSearch(query) {
+      if (!query) return;
+      state.recentSearches = [query, ...state.recentSearches.filter(item => item !== query)].slice(0, 6);
+      localStorage.setItem('b2d:recent-searches', JSON.stringify(state.recentSearches));
+      window.dispatchEvent(new CustomEvent('b2d:search-commit', { detail: query }));
+    }
+
     searchInput.addEventListener('input', event => {
       window.dispatchEvent(new CustomEvent('b2d:search-query', { detail: event.target.value }));
     });
     searchInput.addEventListener('keydown', event => {
       if (event.key === 'Enter') {
-        const query = event.target.value.trim();
-        if (query) {
-          state.recentSearches = [query, ...state.recentSearches.filter(item => item !== query)].slice(0, 6);
-          localStorage.setItem('b2d:recent-searches', JSON.stringify(state.recentSearches));
-          window.dispatchEvent(new CustomEvent('b2d:search-commit', { detail: query }));
-        }
+        event.preventDefault();
+        commitSearch(event.target.value.trim());
       }
     });
+
+    if (searchForm) {
+      searchForm.addEventListener('submit', event => {
+        event.preventDefault();
+        commitSearch(searchInput.value.trim());
+      });
+    }
   }
 
   function initCookieBanner() {
@@ -94,10 +106,85 @@ window.B2D = window.B2D || {};
     const toggle = document.querySelector('[data-nav-toggle]');
     const nav = document.querySelector('[data-nav-drawer]');
     if (!toggle || !nav) return;
+    const MOBILE_BREAKPOINT = 900;
+    let documentListenerActive = false;
+
+    function addDocumentListener() {
+      if (documentListenerActive) return;
+      setTimeout(() => {
+        document.addEventListener('click', handleDocumentClick);
+        documentListenerActive = true;
+      }, 0);
+    }
+
+    function removeDocumentListener() {
+      if (!documentListenerActive) return;
+      document.removeEventListener('click', handleDocumentClick);
+      documentListenerActive = false;
+    }
+
+    function handleDocumentClick(event) {
+      if (!nav.contains(event.target) && !toggle.contains(event.target)) {
+        closeNav();
+      }
+    }
+
+    function openNav() {
+      nav.setAttribute('data-open', '');
+      toggle.setAttribute('aria-expanded', 'true');
+      nav.removeAttribute('aria-hidden');
+      addDocumentListener();
+    }
+
+    function closeNav({ focusToggle = false } = {}) {
+      nav.removeAttribute('data-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      if (window.innerWidth <= MOBILE_BREAKPOINT) {
+        nav.setAttribute('aria-hidden', 'true');
+      } else {
+        nav.removeAttribute('aria-hidden');
+      }
+      removeDocumentListener();
+      if (focusToggle) {
+        toggle.focus();
+      }
+    }
+
+    function syncForViewport() {
+      if (window.innerWidth > MOBILE_BREAKPOINT) {
+        nav.removeAttribute('aria-hidden');
+        nav.removeAttribute('data-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        removeDocumentListener();
+      } else if (!nav.hasAttribute('data-open')) {
+        nav.setAttribute('aria-hidden', 'true');
+      }
+    }
+
     toggle.addEventListener('click', () => {
-      nav.toggleAttribute('data-open');
-      toggle.setAttribute('aria-expanded', nav.hasAttribute('data-open'));
+      if (nav.hasAttribute('data-open')) {
+        closeNav();
+      } else {
+        openNav();
+      }
     });
+
+    nav.addEventListener('keydown', event => {
+      if (event.key === 'Escape') {
+        closeNav({ focusToggle: true });
+      }
+    });
+
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= MOBILE_BREAKPOINT) {
+          closeNav();
+        }
+      });
+    });
+
+    window.addEventListener('resize', syncForViewport);
+    syncForViewport();
   }
 
   window.B2D.app = {

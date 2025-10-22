@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>B2D KITCHEN | Bold, Tasty, Fast Food in Lagos</title>
+  <meta name="description" content="Order flame-grilled burgers, crispy chicken, and handcrafted drinks from B2D KITCHEN. Fresh, fast and affordable." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="manifest" href="manifest.json">
+  <meta property="og:title" content="B2D KITCHEN" />
+  <meta property="og:description" content="Bold, tasty, energetic fast food delivered hot." />
+  <meta property="og:image" content="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20600%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27grad%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23FFF7F2%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23FFE0D6%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%27800%27%20height%3D%27600%27%20fill%3D%27url%28%23grad%29%27/%3E%0A%20%20%3Cg%20fill%3D%27%23FFFFFF%27%20opacity%3D%270.75%27%3E%0A%20%20%20%20%3Crect%20x%3D%2790%27%20y%3D%27110%27%20width%3D%27620%27%20height%3D%27380%27%20rx%3D%2748%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27290%27%20text-anchor%3D%27middle%27%20font-family%3D%27%22Anton%22%2C%20%22Montserrat%20Alternates%22%2C%20sans-serif%27%20font-size%3D%27110%27%20fill%3D%27%23D12D2D%27%3EB2D%3C/text%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27360%27%20text-anchor%3D%27middle%27%20font-family%3D%27Inter%2C%20system-ui%2C%20sans-serif%27%20font-size%3D%2738%27%20fill%3D%27%23FFB703%27%3EKitchen%20Placeholder%3C/text%3E%0A%3C/svg%3E" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://www.example.com/index.html" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "B2D KITCHEN",
+    "servesCuisine": ["Fast Food", "Burgers", "Chicken"],
+    "image": "https://www.example.com/assets/images/hero/hero-burger.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "12 Admiralty Way",
+      "addressLocality": "Lagos",
+      "addressCountry": "NG"
+    },
+    "url": "https://www.example.com",
+    "telephone": "+2347002222222"
+  }
+  </script>
+</head>
+<body>
+  <div class="main-wrapper">
+    <header class="site-header" role="banner">
+      <div class="utility-bar container">
+        <a href="tel:+2347002222222">📞 +234 700 222 2222</a>
+        <span class="announcement" aria-live="polite">🔥 Delivery ETA: 30–45 mins across Lagos</span>
+        <button class="button button-secondary" data-open-login>Login / Join</button>
+      </div>
+      <div class="primary-nav container">
+        <button class="icon-button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav"><span class="visually-hidden">Menu</span>☰</button>
+        <a href="index.html" class="logo">
+          <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20600%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27grad%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23FFF7F2%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23FFE0D6%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%27800%27%20height%3D%27600%27%20fill%3D%27url%28%23grad%29%27/%3E%0A%20%20%3Cg%20fill%3D%27%23FFFFFF%27%20opacity%3D%270.75%27%3E%0A%20%20%20%20%3Crect%20x%3D%2790%27%20y%3D%27110%27%20width%3D%27620%27%20height%3D%27380%27%20rx%3D%2748%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27290%27%20text-anchor%3D%27middle%27%20font-family%3D%27%22Anton%22%2C%20%22Montserrat%20Alternates%22%2C%20sans-serif%27%20font-size%3D%27110%27%20fill%3D%27%23D12D2D%27%3EB2D%3C/text%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27360%27%20text-anchor%3D%27middle%27%20font-family%3D%27Inter%2C%20system-ui%2C%20sans-serif%27%20font-size%3D%2738%27%20fill%3D%27%23FFB703%27%3EKitchen%20Placeholder%3C/text%3E%0A%3C/svg%3E" alt="B2D KITCHEN logo">
+          <span><strong>B2D KITCHEN</strong></span>
+        </a>
+        <div class="search-bar" role="search">
+          <input type="search" placeholder="Search burgers, chicken, pizza..." aria-label="Search menu" data-search-input autocomplete="off" />
+          <div class="badge" data-loyalty-balance>0 pts</div>
+          <div class="search-panel card" data-search-panel hidden></div>
+        </div>
+        <div class="nav-actions">
+          <a href="account.html" class="icon-button" aria-label="Account">
+            👤
+          </a>
+          <a href="wishlist.html" class="icon-button" aria-label="Wishlist">
+            ❤️
+          </a>
+          <button class="icon-button" data-drawer-target="cart-drawer" aria-label="Cart">
+            🛒<span class="badge" data-cart-count>0</span>
+          </button>
+        </div>
+      </div>
+      <nav class="mega-nav container" aria-label="Product categories" data-nav-drawer id="mobile-nav">
+        <a href="menu.html#burgers">🍔 Burgers</a>
+        <a href="menu.html#chicken">🍗 Chicken</a>
+        <a href="menu.html#pizza">🍕 Pizza</a>
+        <a href="menu.html#sides">🍟 Sides</a>
+        <a href="menu.html#drinks">🥤 Drinks</a>
+        <a href="menu.html#desserts">🍰 Desserts</a>
+        <a href="menu.html#breakfast">🥞 Breakfast</a>
+        <a href="menu.html#family">👨‍👩‍👧‍👦 Family Meals</a>
+        <a href="menu.html#value">💥 Value Deals</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="container hero" aria-labelledby="hero-title">
+        <picture>
+          <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20600%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27grad%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23FFF7F2%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23FFE0D6%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%27800%27%20height%3D%27600%27%20fill%3D%27url%28%23grad%29%27/%3E%0A%20%20%3Cg%20fill%3D%27%23FFFFFF%27%20opacity%3D%270.75%27%3E%0A%20%20%20%20%3Crect%20x%3D%2790%27%20y%3D%27110%27%20width%3D%27620%27%20height%3D%27380%27%20rx%3D%2748%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27290%27%20text-anchor%3D%27middle%27%20font-family%3D%27%22Anton%22%2C%20%22Montserrat%20Alternates%22%2C%20sans-serif%27%20font-size%3D%27110%27%20fill%3D%27%23D12D2D%27%3EB2D%3C/text%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27360%27%20text-anchor%3D%27middle%27%20font-family%3D%27Inter%2C%20system-ui%2C%20sans-serif%27%20font-size%3D%2738%27%20fill%3D%27%23FFB703%27%3EKitchen%20Placeholder%3C/text%3E%0A%3C/svg%3E" alt="Grilled burger with dripping cheese" />
+        </picture>
+        <div class="hero-content">
+          <h1 id="hero-title">Fire-Grilled Goodness. Delivered Fast.</h1>
+          <p>Flame-kissed burgers, crispy chicken, handcrafted drinks – all made-to-order with bold Nigerian flavors.</p>
+          <div class="hero-actions">
+            <a href="menu.html" class="button button-primary">Order Now</a>
+            <a href="deals.html" class="button button-ghost">View Menu & Deals</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="container" aria-labelledby="promo-title">
+        <h2 id="promo-title">Why Lagos Loves B2D</h2>
+        <div class="grid cards">
+          <article class="card">
+            <div class="card-image"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20600%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27grad%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23FFF7F2%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23FFE0D6%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%27800%27%20height%3D%27600%27%20fill%3D%27url%28%23grad%29%27/%3E%0A%20%20%3Cg%20fill%3D%27%23FFFFFF%27%20opacity%3D%270.75%27%3E%0A%20%20%20%20%3Crect%20x%3D%2790%27%20y%3D%27110%27%20width%3D%27620%27%20height%3D%27380%27%20rx%3D%2748%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27290%27%20text-anchor%3D%27middle%27%20font-family%3D%27%22Anton%22%2C%20%22Montserrat%20Alternates%22%2C%20sans-serif%27%20font-size%3D%27110%27%20fill%3D%27%23D12D2D%27%3EB2D%3C/text%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27360%27%20text-anchor%3D%27middle%27%20font-family%3D%27Inter%2C%20system-ui%2C%20sans-serif%27%20font-size%3D%2738%27%20fill%3D%27%23FFB703%27%3EKitchen%20Placeholder%3C/text%3E%0A%3C/svg%3E" alt="Rider delivering food"></div>
+            <h3>30–45 min Delivery</h3>
+            <p>Real-time tracking and hot deliveries to your door.</p>
+          </article>
+          <article class="card">
+            <div class="card-image"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20600%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27grad%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23FFF7F2%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23FFE0D6%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%27800%27%20height%3D%27600%27%20fill%3D%27url%28%23grad%29%27/%3E%0A%20%20%3Cg%20fill%3D%27%23FFFFFF%27%20opacity%3D%270.75%27%3E%0A%20%20%20%20%3Crect%20x%3D%2790%27%20y%3D%27110%27%20width%3D%27620%27%20height%3D%27380%27%20rx%3D%2748%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27290%27%20text-anchor%3D%27middle%27%20font-family%3D%27%22Anton%22%2C%20%22Montserrat%20Alternates%22%2C%20sans-serif%27%20font-size%3D%27110%27%20fill%3D%27%23D12D2D%27%3EB2D%3C/text%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27360%27%20text-anchor%3D%27middle%27%20font-family%3D%27Inter%2C%20system-ui%2C%20sans-serif%27%20font-size%3D%2738%27%20fill%3D%27%23FFB703%27%3EKitchen%20Placeholder%3C/text%3E%0A%3C/svg%3E" alt="Secure payment illustration"></div>
+            <h3>Secure Payments</h3>
+            <p>Paystack & Flutterwave with bank transfer support.</p>
+          </article>
+          <article class="card">
+            <div class="card-image"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20600%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27grad%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23FFF7F2%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23FFE0D6%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%27800%27%20height%3D%27600%27%20fill%3D%27url%28%23grad%29%27/%3E%0A%20%20%3Cg%20fill%3D%27%23FFFFFF%27%20opacity%3D%270.75%27%3E%0A%20%20%20%20%3Crect%20x%3D%2790%27%20y%3D%27110%27%20width%3D%27620%27%20height%3D%27380%27%20rx%3D%2748%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27290%27%20text-anchor%3D%27middle%27%20font-family%3D%27%22Anton%22%2C%20%22Montserrat%20Alternates%22%2C%20sans-serif%27%20font-size%3D%27110%27%20fill%3D%27%23D12D2D%27%3EB2D%3C/text%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27360%27%20text-anchor%3D%27middle%27%20font-family%3D%27Inter%2C%20system-ui%2C%20sans-serif%27%20font-size%3D%2738%27%20fill%3D%27%23FFB703%27%3EKitchen%20Placeholder%3C/text%3E%0A%3C/svg%3E" alt="Fresh burger"></div>
+            <h3>Hot & Fresh</h3>
+            <p>Cooked on order and sealed with insulated packaging.</p>
+          </article>
+          <article class="card">
+            <div class="card-image"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20600%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27grad%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23FFF7F2%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23FFE0D6%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%27800%27%20height%3D%27600%27%20fill%3D%27url%28%23grad%29%27/%3E%0A%20%20%3Cg%20fill%3D%27%23FFFFFF%27%20opacity%3D%270.75%27%3E%0A%20%20%20%20%3Crect%20x%3D%2790%27%20y%3D%27110%27%20width%3D%27620%27%20height%3D%27380%27%20rx%3D%2748%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27290%27%20text-anchor%3D%27middle%27%20font-family%3D%27%22Anton%22%2C%20%22Montserrat%20Alternates%22%2C%20sans-serif%27%20font-size%3D%27110%27%20fill%3D%27%23D12D2D%27%3EB2D%3C/text%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27360%27%20text-anchor%3D%27middle%27%20font-family%3D%27Inter%2C%20system-ui%2C%20sans-serif%27%20font-size%3D%2738%27%20fill%3D%27%23FFB703%27%3EKitchen%20Placeholder%3C/text%3E%0A%3C/svg%3E" alt="Smiling customer"></div>
+            <h3>Easy Returns</h3>
+            <p>No hassle replacements on every order.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="container" aria-labelledby="categories-title">
+        <div class="flex flex-between flex-wrap gap-md">
+          <h2 id="categories-title">Featured Categories</h2>
+          <a class="button button-secondary" href="menu.html">Explore All</a>
+        </div>
+        <div class="grid cards">
+          <a class="card" href="menu.html#burgers">
+            <div class="card-image"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20600%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27grad%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23FFF7F2%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23FFE0D6%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%27800%27%20height%3D%27600%27%20fill%3D%27url%28%23grad%29%27/%3E%0A%20%20%3Cg%20fill%3D%27%23FFFFFF%27%20opacity%3D%270.75%27%3E%0A%20%20%20%20%3Crect%20x%3D%2790%27%20y%3D%27110%27%20width%3D%27620%27%20height%3D%27380%27%20rx%3D%2748%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27290%27%20text-anchor%3D%27middle%27%20font-family%3D%27%22Anton%22%2C%20%22Montserrat%20Alternates%22%2C%20sans-serif%27%20font-size%3D%27110%27%20fill%3D%27%23D12D2D%27%3EB2D%3C/text%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27360%27%20text-anchor%3D%27middle%27%20font-family%3D%27Inter%2C%20system-ui%2C%20sans-serif%27%20font-size%3D%2738%27%20fill%3D%27%23FFB703%27%3EKitchen%20Placeholder%3C/text%3E%0A%3C/svg%3E" alt="Burgers category"></div>
+            <h3>Burgers</h3>
+            <p>Juicy smash patties stacked high.</p>
+          </a>
+          <a class="card" href="menu.html#chicken">
+            <div class="card-image"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20600%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27grad%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23FFF7F2%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23FFE0D6%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%27800%27%20height%3D%27600%27%20fill%3D%27url%28%23grad%29%27/%3E%0A%20%20%3Cg%20fill%3D%27%23FFFFFF%27%20opacity%3D%270.75%27%3E%0A%20%20%20%20%3Crect%20x%3D%2790%27%20y%3D%27110%27%20width%3D%27620%27%20height%3D%27380%27%20rx%3D%2748%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27290%27%20text-anchor%3D%27middle%27%20font-family%3D%27%22Anton%22%2C%20%22Montserrat%20Alternates%22%2C%20sans-serif%27%20font-size%3D%27110%27%20fill%3D%27%23D12D2D%27%3EB2D%3C/text%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27360%27%20text-anchor%3D%27middle%27%20font-family%3D%27Inter%2C%20system-ui%2C%20sans-serif%27%20font-size%3D%2738%27%20fill%3D%27%23FFB703%27%3EKitchen%20Placeholder%3C/text%3E%0A%3C/svg%3E" alt="Chicken meals"></div>
+            <h3>Chicken</h3>
+            <p>Crispy, spicy, flame-grilled goodness.</p>
+          </a>
+          <a class="card" href="menu.html#pizza">
+            <div class="card-image"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20600%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27grad%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23FFF7F2%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23FFE0D6%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%27800%27%20height%3D%27600%27%20fill%3D%27url%28%23grad%29%27/%3E%0A%20%20%3Cg%20fill%3D%27%23FFFFFF%27%20opacity%3D%270.75%27%3E%0A%20%20%20%20%3Crect%20x%3D%2790%27%20y%3D%27110%27%20width%3D%27620%27%20height%3D%27380%27%20rx%3D%2748%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27290%27%20text-anchor%3D%27middle%27%20font-family%3D%27%22Anton%22%2C%20%22Montserrat%20Alternates%22%2C%20sans-serif%27%20font-size%3D%27110%27%20fill%3D%27%23D12D2D%27%3EB2D%3C/text%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27360%27%20text-anchor%3D%27middle%27%20font-family%3D%27Inter%2C%20system-ui%2C%20sans-serif%27%20font-size%3D%2738%27%20fill%3D%27%23FFB703%27%3EKitchen%20Placeholder%3C/text%3E%0A%3C/svg%3E" alt="Pizza selection"></div>
+            <h3>Pizza</h3>
+            <p>Stone-fired pies with suya toppings.</p>
+          </a>
+          <a class="card" href="menu.html#sides">
+            <div class="card-image"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20600%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27grad%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23FFF7F2%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23FFE0D6%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%27800%27%20height%3D%27600%27%20fill%3D%27url%28%23grad%29%27/%3E%0A%20%20%3Cg%20fill%3D%27%23FFFFFF%27%20opacity%3D%270.75%27%3E%0A%20%20%20%20%3Crect%20x%3D%2790%27%20y%3D%27110%27%20width%3D%27620%27%20height%3D%27380%27%20rx%3D%2748%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27290%27%20text-anchor%3D%27middle%27%20font-family%3D%27%22Anton%22%2C%20%22Montserrat%20Alternates%22%2C%20sans-serif%27%20font-size%3D%27110%27%20fill%3D%27%23D12D2D%27%3EB2D%3C/text%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27360%27%20text-anchor%3D%27middle%27%20font-family%3D%27Inter%2C%20system-ui%2C%20sans-serif%27%20font-size%3D%2738%27%20fill%3D%27%23FFB703%27%3EKitchen%20Placeholder%3C/text%3E%0A%3C/svg%3E" alt="Sides and snacks"></div>
+            <h3>Sides</h3>
+            <p>Plantain fries, salads, wings & dips.</p>
+          </a>
+          <a class="card" href="menu.html#drinks">
+            <div class="card-image"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20600%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27grad%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23FFF7F2%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23FFE0D6%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%27800%27%20height%3D%27600%27%20fill%3D%27url%28%23grad%29%27/%3E%0A%20%20%3Cg%20fill%3D%27%23FFFFFF%27%20opacity%3D%270.75%27%3E%0A%20%20%20%20%3Crect%20x%3D%2790%27%20y%3D%27110%27%20width%3D%27620%27%20height%3D%27380%27%20rx%3D%2748%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27290%27%20text-anchor%3D%27middle%27%20font-family%3D%27%22Anton%22%2C%20%22Montserrat%20Alternates%22%2C%20sans-serif%27%20font-size%3D%27110%27%20fill%3D%27%23D12D2D%27%3EB2D%3C/text%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27360%27%20text-anchor%3D%27middle%27%20font-family%3D%27Inter%2C%20system-ui%2C%20sans-serif%27%20font-size%3D%2738%27%20fill%3D%27%23FFB703%27%3EKitchen%20Placeholder%3C/text%3E%0A%3C/svg%3E" alt="Drinks selection"></div>
+            <h3>Drinks</h3>
+            <p>Zobo coolers, shakes and sodas.</p>
+          </a>
+          <a class="card" href="menu.html#desserts">
+            <div class="card-image"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20600%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27grad%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23FFF7F2%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23FFE0D6%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%27800%27%20height%3D%27600%27%20fill%3D%27url%28%23grad%29%27/%3E%0A%20%20%3Cg%20fill%3D%27%23FFFFFF%27%20opacity%3D%270.75%27%3E%0A%20%20%20%20%3Crect%20x%3D%2790%27%20y%3D%27110%27%20width%3D%27620%27%20height%3D%27380%27%20rx%3D%2748%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27290%27%20text-anchor%3D%27middle%27%20font-family%3D%27%22Anton%22%2C%20%22Montserrat%20Alternates%22%2C%20sans-serif%27%20font-size%3D%27110%27%20fill%3D%27%23D12D2D%27%3EB2D%3C/text%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27360%27%20text-anchor%3D%27middle%27%20font-family%3D%27Inter%2C%20system-ui%2C%20sans-serif%27%20font-size%3D%2738%27%20fill%3D%27%23FFB703%27%3EKitchen%20Placeholder%3C/text%3E%0A%3C/svg%3E" alt="Desserts assortment"></div>
+            <h3>Desserts</h3>
+            <p>Sweet treats from brownies to parfaits.</p>
+          </a>
+          <a class="card" href="menu.html#breakfast">
+            <div class="card-image"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20600%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27grad%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23FFF7F2%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23FFE0D6%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%27800%27%20height%3D%27600%27%20fill%3D%27url%28%23grad%29%27/%3E%0A%20%20%3Cg%20fill%3D%27%23FFFFFF%27%20opacity%3D%270.75%27%3E%0A%20%20%20%20%3Crect%20x%3D%2790%27%20y%3D%27110%27%20width%3D%27620%27%20height%3D%27380%27%20rx%3D%2748%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27290%27%20text-anchor%3D%27middle%27%20font-family%3D%27%22Anton%22%2C%20%22Montserrat%20Alternates%22%2C%20sans-serif%27%20font-size%3D%27110%27%20fill%3D%27%23D12D2D%27%3EB2D%3C/text%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27360%27%20text-anchor%3D%27middle%27%20font-family%3D%27Inter%2C%20system-ui%2C%20sans-serif%27%20font-size%3D%2738%27%20fill%3D%27%23FFB703%27%3EKitchen%20Placeholder%3C/text%3E%0A%3C/svg%3E" alt="Breakfast items"></div>
+            <h3>Breakfast</h3>
+            <p>Wraps, pancakes and energy bowls.</p>
+          </a>
+          <a class="card" href="menu.html#family">
+            <div class="card-image"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20600%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27grad%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23FFF7F2%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23FFE0D6%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%27800%27%20height%3D%27600%27%20fill%3D%27url%28%23grad%29%27/%3E%0A%20%20%3Cg%20fill%3D%27%23FFFFFF%27%20opacity%3D%270.75%27%3E%0A%20%20%20%20%3Crect%20x%3D%2790%27%20y%3D%27110%27%20width%3D%27620%27%20height%3D%27380%27%20rx%3D%2748%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27290%27%20text-anchor%3D%27middle%27%20font-family%3D%27%22Anton%22%2C%20%22Montserrat%20Alternates%22%2C%20sans-serif%27%20font-size%3D%27110%27%20fill%3D%27%23D12D2D%27%3EB2D%3C/text%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27360%27%20text-anchor%3D%27middle%27%20font-family%3D%27Inter%2C%20system-ui%2C%20sans-serif%27%20font-size%3D%2738%27%20fill%3D%27%23FFB703%27%3EKitchen%20Placeholder%3C/text%3E%0A%3C/svg%3E" alt="Family meals"></div>
+            <h3>Family Meals</h3>
+            <p>Feasts for every crew and celebration.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="container" aria-labelledby="bestsellers-title">
+        <div class="flex flex-between flex-wrap gap-md">
+          <h2 id="bestsellers-title">Bestsellers</h2>
+          <div class="tabs" role="tablist" aria-label="Menu filters">
+            <button role="tab" aria-selected="true" aria-controls="tab-bestsellers">Top Picks</button>
+            <button role="tab" aria-selected="false" aria-controls="tab-new">New This Week</button>
+            <button role="tab" aria-selected="false" aria-controls="tab-value">Under ₦2,000</button>
+          </div>
+        </div>
+        <div id="tab-bestsellers" role="tabpanel">
+          <div class="grid cards" data-menu-grid></div>
+        </div>
+        <div id="tab-new" role="tabpanel" hidden>
+          <div class="grid cards">
+            <article class="card skeleton" style="height:240px"></article>
+          </div>
+        </div>
+        <div id="tab-value" role="tabpanel" hidden>
+          <div class="grid cards">
+            <article class="card skeleton" style="height:240px"></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="container" aria-labelledby="deals-title">
+        <h2 id="deals-title">Deals & Coupons</h2>
+        <div class="grid cards">
+          <article class="card">
+            <div class="card-image"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20600%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27grad%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23FFF7F2%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23FFE0D6%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%27800%27%20height%3D%27600%27%20fill%3D%27url%28%23grad%29%27/%3E%0A%20%20%3Cg%20fill%3D%27%23FFFFFF%27%20opacity%3D%270.75%27%3E%0A%20%20%20%20%3Crect%20x%3D%2790%27%20y%3D%27110%27%20width%3D%27620%27%20height%3D%27380%27%20rx%3D%2748%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27290%27%20text-anchor%3D%27middle%27%20font-family%3D%27%22Anton%22%2C%20%22Montserrat%20Alternates%22%2C%20sans-serif%27%20font-size%3D%27110%27%20fill%3D%27%23D12D2D%27%3EB2D%3C/text%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27360%27%20text-anchor%3D%27middle%27%20font-family%3D%27Inter%2C%20system-ui%2C%20sans-serif%27%20font-size%3D%2738%27%20fill%3D%27%23FFB703%27%3EKitchen%20Placeholder%3C/text%3E%0A%3C/svg%3E" alt="Hot deal burger combo"></div>
+            <h3>HOTDEAL10</h3>
+            <p>10% off spicy picks this week only.</p>
+            <button class="button button-primary" data-apply-coupon>Apply Coupon</button>
+          </article>
+          <article class="card">
+            <div class="card-image"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20600%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27grad%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23FFF7F2%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23FFE0D6%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%27800%27%20height%3D%27600%27%20fill%3D%27url%28%23grad%29%27/%3E%0A%20%20%3Cg%20fill%3D%27%23FFFFFF%27%20opacity%3D%270.75%27%3E%0A%20%20%20%20%3Crect%20x%3D%2790%27%20y%3D%27110%27%20width%3D%27620%27%20height%3D%27380%27%20rx%3D%2748%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27290%27%20text-anchor%3D%27middle%27%20font-family%3D%27%22Anton%22%2C%20%22Montserrat%20Alternates%22%2C%20sans-serif%27%20font-size%3D%27110%27%20fill%3D%27%23D12D2D%27%3EB2D%3C/text%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27360%27%20text-anchor%3D%27middle%27%20font-family%3D%27Inter%2C%20system-ui%2C%20sans-serif%27%20font-size%3D%2738%27%20fill%3D%27%23FFB703%27%3EKitchen%20Placeholder%3C/text%3E%0A%3C/svg%3E" alt="Meal combo"></div>
+            <h3>MEALCOMBO250</h3>
+            <p>₦250 off any combo meal above ₦3,500.</p>
+            <button class="button button-primary" data-apply-coupon>Apply Coupon</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="container" aria-labelledby="locations-title">
+        <h2 id="locations-title">Locations & Hours</h2>
+        <div class="grid cards">
+          <article class="card">
+            <div class="card-image"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20600%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27grad%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23FFF7F2%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23FFE0D6%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%27800%27%20height%3D%27600%27%20fill%3D%27url%28%23grad%29%27/%3E%0A%20%20%3Cg%20fill%3D%27%23FFFFFF%27%20opacity%3D%270.75%27%3E%0A%20%20%20%20%3Crect%20x%3D%2790%27%20y%3D%27110%27%20width%3D%27620%27%20height%3D%27380%27%20rx%3D%2748%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27290%27%20text-anchor%3D%27middle%27%20font-family%3D%27%22Anton%22%2C%20%22Montserrat%20Alternates%22%2C%20sans-serif%27%20font-size%3D%27110%27%20fill%3D%27%23D12D2D%27%3EB2D%3C/text%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27360%27%20text-anchor%3D%27middle%27%20font-family%3D%27Inter%2C%20system-ui%2C%20sans-serif%27%20font-size%3D%2738%27%20fill%3D%27%23FFB703%27%3EKitchen%20Placeholder%3C/text%3E%0A%3C/svg%3E" alt="Lekki restaurant"></div>
+            <h3>Lekki Phase 1</h3>
+            <p>12 Admiralty Way, Lekki • Mon–Sun: 9am–11pm</p>
+            <a class="button button-secondary" href="locations.html#lekki">Order pickup</a>
+          </article>
+          <article class="card">
+            <div class="card-image"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20600%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27grad%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23FFF7F2%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23FFE0D6%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%27800%27%20height%3D%27600%27%20fill%3D%27url%28%23grad%29%27/%3E%0A%20%20%3Cg%20fill%3D%27%23FFFFFF%27%20opacity%3D%270.75%27%3E%0A%20%20%20%20%3Crect%20x%3D%2790%27%20y%3D%27110%27%20width%3D%27620%27%20height%3D%27380%27%20rx%3D%2748%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27290%27%20text-anchor%3D%27middle%27%20font-family%3D%27%22Anton%22%2C%20%22Montserrat%20Alternates%22%2C%20sans-serif%27%20font-size%3D%27110%27%20fill%3D%27%23D12D2D%27%3EB2D%3C/text%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27360%27%20text-anchor%3D%27middle%27%20font-family%3D%27Inter%2C%20system-ui%2C%20sans-serif%27%20font-size%3D%2738%27%20fill%3D%27%23FFB703%27%3EKitchen%20Placeholder%3C/text%3E%0A%3C/svg%3E" alt="Ikeja restaurant"></div>
+            <h3>Ikeja GRA</h3>
+            <p>88 Isaac John Street, Ikeja • Mon–Sun: 9am–10pm</p>
+            <a class="button button-secondary" href="locations.html#ikeja">Order pickup</a>
+          </article>
+          <article class="card">
+            <div class="card-image"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20600%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27grad%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23FFF7F2%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23FFE0D6%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%27800%27%20height%3D%27600%27%20fill%3D%27url%28%23grad%29%27/%3E%0A%20%20%3Cg%20fill%3D%27%23FFFFFF%27%20opacity%3D%270.75%27%3E%0A%20%20%20%20%3Crect%20x%3D%2790%27%20y%3D%27110%27%20width%3D%27620%27%20height%3D%27380%27%20rx%3D%2748%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27290%27%20text-anchor%3D%27middle%27%20font-family%3D%27%22Anton%22%2C%20%22Montserrat%20Alternates%22%2C%20sans-serif%27%20font-size%3D%27110%27%20fill%3D%27%23D12D2D%27%3EB2D%3C/text%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27360%27%20text-anchor%3D%27middle%27%20font-family%3D%27Inter%2C%20system-ui%2C%20sans-serif%27%20font-size%3D%2738%27%20fill%3D%27%23FFB703%27%3EKitchen%20Placeholder%3C/text%3E%0A%3C/svg%3E" alt="Victoria Island"></div>
+            <h3>Victoria Island</h3>
+            <p>5 Bishop Aboyade Cole, VI • Open 24/7</p>
+            <a class="button button-secondary" href="locations.html#vi">Order pickup</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="container" aria-labelledby="testimonials-title">
+        <h2 id="testimonials-title">Loved by Foodies</h2>
+        <div class="grid cards">
+          <article class="card">
+            <div class="flex gap-md">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20600%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27grad%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23FFF7F2%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23FFE0D6%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%27800%27%20height%3D%27600%27%20fill%3D%27url%28%23grad%29%27/%3E%0A%20%20%3Cg%20fill%3D%27%23FFFFFF%27%20opacity%3D%270.75%27%3E%0A%20%20%20%20%3Crect%20x%3D%2790%27%20y%3D%27110%27%20width%3D%27620%27%20height%3D%27380%27%20rx%3D%2748%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27290%27%20text-anchor%3D%27middle%27%20font-family%3D%27%22Anton%22%2C%20%22Montserrat%20Alternates%22%2C%20sans-serif%27%20font-size%3D%27110%27%20fill%3D%27%23D12D2D%27%3EB2D%3C/text%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27360%27%20text-anchor%3D%27middle%27%20font-family%3D%27Inter%2C%20system-ui%2C%20sans-serif%27%20font-size%3D%2738%27%20fill%3D%27%23FFB703%27%3EKitchen%20Placeholder%3C/text%3E%0A%3C/svg%3E" alt="Jumoke" width="64" height="64" style="border-radius:50%;object-fit:cover;">
+              <div>
+                <h3>Jumoke A.</h3>
+                <p>“B2D KITCHEN delivers the crispiest chicken and bold flavors every single time!”</p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="flex gap-md">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20600%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27grad%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23FFF7F2%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23FFE0D6%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%27800%27%20height%3D%27600%27%20fill%3D%27url%28%23grad%29%27/%3E%0A%20%20%3Cg%20fill%3D%27%23FFFFFF%27%20opacity%3D%270.75%27%3E%0A%20%20%20%20%3Crect%20x%3D%2790%27%20y%3D%27110%27%20width%3D%27620%27%20height%3D%27380%27%20rx%3D%2748%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27290%27%20text-anchor%3D%27middle%27%20font-family%3D%27%22Anton%22%2C%20%22Montserrat%20Alternates%22%2C%20sans-serif%27%20font-size%3D%27110%27%20fill%3D%27%23D12D2D%27%3EB2D%3C/text%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27360%27%20text-anchor%3D%27middle%27%20font-family%3D%27Inter%2C%20system-ui%2C%20sans-serif%27%20font-size%3D%2738%27%20fill%3D%27%23FFB703%27%3EKitchen%20Placeholder%3C/text%3E%0A%3C/svg%3E" alt="Segun" width="64" height="64" style="border-radius:50%;object-fit:cover;">
+              <div>
+                <h3>Segun T.</h3>
+                <p>“Order tracking was spot on and the suya pizza blew my mind.”</p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="flex gap-md">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20600%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27grad%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23FFF7F2%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23FFE0D6%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%27800%27%20height%3D%27600%27%20fill%3D%27url%28%23grad%29%27/%3E%0A%20%20%3Cg%20fill%3D%27%23FFFFFF%27%20opacity%3D%270.75%27%3E%0A%20%20%20%20%3Crect%20x%3D%2790%27%20y%3D%27110%27%20width%3D%27620%27%20height%3D%27380%27%20rx%3D%2748%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27290%27%20text-anchor%3D%27middle%27%20font-family%3D%27%22Anton%22%2C%20%22Montserrat%20Alternates%22%2C%20sans-serif%27%20font-size%3D%27110%27%20fill%3D%27%23D12D2D%27%3EB2D%3C/text%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27360%27%20text-anchor%3D%27middle%27%20font-family%3D%27Inter%2C%20system-ui%2C%20sans-serif%27%20font-size%3D%2738%27%20fill%3D%27%23FFB703%27%3EKitchen%20Placeholder%3C/text%3E%0A%3C/svg%3E" alt="Ada" width="64" height="64" style="border-radius:50%;object-fit:cover;">
+              <div>
+                <h3>Ada E.</h3>
+                <p>“Customer support is prompt and loyalty perks keep me coming back.”</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="container" aria-labelledby="newsletter-title">
+        <div class="card">
+          <div class="stack-md">
+            <h2 id="newsletter-title">Join the Flame Circle</h2>
+            <p>Be first to know about new drops, chef specials and secret coupons.</p>
+            <form class="stack-sm" data-newsletter>
+              <div class="form-field">
+                <label for="newsletter-email">Email</label>
+                <input id="newsletter-email" class="form-control" type="email" placeholder="you@example.com" required>
+              </div>
+              <p class="muted">We’ll send a confirmation link. You can unsubscribe anytime.</p>
+              <div class="flex gap-md">
+                <button class="button button-primary" type="submit">Subscribe</button>
+                <a class="button button-secondary" href="https://wa.me/2347002222222">Order on WhatsApp</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <div class="container footer-top">
+        <div class="stack-lg">
+          <h2>B2D KITCHEN</h2>
+          <p>Fresh, fast and unforgettable Nigerian-inspired comfort food.</p>
+          <div class="flex gap-md">
+            <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20600%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27grad%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23FFF7F2%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23FFE0D6%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%27800%27%20height%3D%27600%27%20fill%3D%27url%28%23grad%29%27/%3E%0A%20%20%3Cg%20fill%3D%27%23FFFFFF%27%20opacity%3D%270.75%27%3E%0A%20%20%20%20%3Crect%20x%3D%2790%27%20y%3D%27110%27%20width%3D%27620%27%20height%3D%27380%27%20rx%3D%2748%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27290%27%20text-anchor%3D%27middle%27%20font-family%3D%27%22Anton%22%2C%20%22Montserrat%20Alternates%22%2C%20sans-serif%27%20font-size%3D%27110%27%20fill%3D%27%23D12D2D%27%3EB2D%3C/text%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27360%27%20text-anchor%3D%27middle%27%20font-family%3D%27Inter%2C%20system-ui%2C%20sans-serif%27%20font-size%3D%2738%27%20fill%3D%27%23FFB703%27%3EKitchen%20Placeholder%3C/text%3E%0A%3C/svg%3E" alt="Paystack" height="32">
+            <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20600%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27grad%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23FFF7F2%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23FFE0D6%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%27800%27%20height%3D%27600%27%20fill%3D%27url%28%23grad%29%27/%3E%0A%20%20%3Cg%20fill%3D%27%23FFFFFF%27%20opacity%3D%270.75%27%3E%0A%20%20%20%20%3Crect%20x%3D%2790%27%20y%3D%27110%27%20width%3D%27620%27%20height%3D%27380%27%20rx%3D%2748%27/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27290%27%20text-anchor%3D%27middle%27%20font-family%3D%27%22Anton%22%2C%20%22Montserrat%20Alternates%22%2C%20sans-serif%27%20font-size%3D%27110%27%20fill%3D%27%23D12D2D%27%3EB2D%3C/text%3E%0A%20%20%3Ctext%20x%3D%27400%27%20y%3D%27360%27%20text-anchor%3D%27middle%27%20font-family%3D%27Inter%2C%20system-ui%2C%20sans-serif%27%20font-size%3D%2738%27%20fill%3D%27%23FFB703%27%3EKitchen%20Placeholder%3C/text%3E%0A%3C/svg%3E" alt="Flutterwave" height="32">
+          </div>
+        </div>
+        <div class="footer-columns">
+          <div class="stack-sm">
+            <h3>Order</h3>
+            <a href="menu.html">Menu</a>
+            <a href="deals.html">Deals</a>
+            <a href="cart.html">Cart</a>
+            <a href="checkout.html">Checkout</a>
+          </div>
+          <div class="stack-sm">
+            <h3>Help</h3>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="order-tracking.html">Track Order</a>
+          </div>
+          <div class="stack-sm">
+            <h3>Company</h3>
+            <a href="about.html">About</a>
+            <a href="careers.html">Careers</a>
+            <a href="blog.html">Blog</a>
+          </div>
+          <div class="stack-sm">
+            <h3>Social</h3>
+            <a href="https://instagram.com">Instagram</a>
+            <a href="https://twitter.com">Twitter</a>
+            <a href="https://facebook.com">Facebook</a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span id="year"></span> B2D KITCHEN. All rights reserved.</span>
+        <div class="flex gap-md">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="drawer" id="cart-drawer" role="dialog" aria-modal="true">
+    <div class="drawer__panel stack-md">
+      <div class="flex flex-between">
+        <h2>Your Cart</h2>
+        <button class="icon-button" data-close aria-label="Close cart">✕</button>
+      </div>
+      <div class="stack-md" data-cart-items></div>
+      <div class="card stack-sm" data-cart-summary>
+        <div class="flex flex-between"><span>Subtotal</span><strong data-subtotal>₦0</strong></div>
+        <div class="flex flex-between"><span>Delivery</span><strong data-delivery>₦0</strong></div>
+        <div class="flex flex-between"><span>Total</span><strong data-total>₦0</strong></div>
+        <label class="form-field">
+          <span>Coupon</span>
+          <input class="form-control" name="coupon" placeholder="Enter code">
+        </label>
+        <button class="button button-secondary" data-apply-coupon>Apply Coupon</button>
+        <a class="button button-primary" href="checkout.html">Checkout</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="auth-modal" role="dialog" aria-modal="true" hidden>
+    <div class="modal__dialog stack-md">
+      <div class="flex flex-between">
+        <h2>Welcome Back</h2>
+        <button class="icon-button" data-close aria-label="Close">✕</button>
+      </div>
+      <form class="stack-sm">
+        <label class="form-field">
+          <span>Email</span>
+          <input class="form-control" type="email" name="email" required>
+        </label>
+        <label class="form-field">
+          <span>Password</span>
+          <input class="form-control" type="password" name="password" required>
+        </label>
+        <button class="button button-primary" type="submit">Sign In</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="card" data-cookie-banner hidden style="position:fixed;left:1.5rem;right:1.5rem;bottom:1.5rem;z-index:1200;max-width:560px;margin:auto;">
+    <h3>Cookie Consent</h3>
+    <p>We use cookies to personalise content, deliver better ads and improve your experience.</p>
+    <div class="flex gap-md">
+      <button class="button button-primary">Accept</button>
+      <button class="button button-secondary">Manage</button>
+    </div>
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="js/data.js"></script>
+  <script src="js/analytics.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/pwa.js"></script>
+</body>
+</html>

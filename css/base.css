@@ -58,6 +58,42 @@ body {
   background: var(--bg);
 }
 
+body.is-nav-open {
+  overflow: hidden;
+}
+
+body.is-nav-open::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(17, 24, 39, 0.45);
+  z-index: 900;
+}
+
+h1 {
+  font-size: clamp(2rem, 6vw, 3.25rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+h3 {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
+}
+
 img, picture, svg, video {
   max-width: 100%;
   display: block;

@@ -93,18 +93,20 @@ window.B2D = window.B2D || {};
       return;
     }
     banner.hidden = false;
-    banner.querySelectorAll('button').forEach(button => {
-      button.addEventListener('click', () => {
+    const acceptButton = banner.querySelector('[data-cookie-accept]');
+    if (acceptButton) {
+      acceptButton.addEventListener('click', () => {
         localStorage.setItem('b2d:cookies-consented', 'true');
         banner.hidden = true;
         window.B2D.ui?.toast('Thanks! We will use cookies to enhance your experience.', { status: 'info' });
       });
-    });
+    }
   }
 
   function initNavigationToggle() {
     const toggle = document.querySelector('[data-nav-toggle]');
     const nav = document.querySelector('[data-nav-drawer]');
+    const header = document.querySelector('header.site-header');
     if (!toggle || !nav) return;
     const MOBILE_BREAKPOINT = 900;
     let documentListenerActive = false;
@@ -133,6 +135,11 @@ window.B2D = window.B2D || {};
       nav.setAttribute('data-open', '');
       toggle.setAttribute('aria-expanded', 'true');
       nav.removeAttribute('aria-hidden');
+      if (window.innerWidth <= MOBILE_BREAKPOINT) {
+        const offset = header ? header.offsetHeight : 0;
+        nav.style.setProperty('--mobile-nav-offset', `${offset}px`);
+        document.body.classList.add('is-nav-open');
+      }
       addDocumentListener();
     }
 
@@ -144,6 +151,8 @@ window.B2D = window.B2D || {};
       } else {
         nav.removeAttribute('aria-hidden');
       }
+      nav.style.removeProperty('--mobile-nav-offset');
+      document.body.classList.remove('is-nav-open');
       removeDocumentListener();
       if (focusToggle) {
         toggle.focus();
@@ -155,9 +164,13 @@ window.B2D = window.B2D || {};
         nav.removeAttribute('aria-hidden');
         nav.removeAttribute('data-open');
         toggle.setAttribute('aria-expanded', 'false');
+        nav.style.removeProperty('--mobile-nav-offset');
+        document.body.classList.remove('is-nav-open');
         removeDocumentListener();
       } else if (!nav.hasAttribute('data-open')) {
         nav.setAttribute('aria-hidden', 'true');
+        nav.style.removeProperty('--mobile-nav-offset');
+        document.body.classList.remove('is-nav-open');
       }
     }
 

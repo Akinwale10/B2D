@@ -96,7 +96,35 @@
         <p class="muted">Effective January 2024</p>
         <p>We collect basic information to process orders and improve experiences. Contact hello@b2dkitchen.ng for privacy queries.</p>
       </article>
-</main>
+
+      <section id="cookies" class="stack-md">
+        <h2>Cookie Preferences</h2>
+        <p>We use cookies to operate secure checkout, understand performance and personalise offers. Only essential cookies run by default. Analytics and marketing cookies load after you provide consent.</p>
+        <div class="card stack-sm">
+          <h3>Cookie Categories</h3>
+          <div class="stack-sm">
+            <div>
+              <strong>Essential</strong>
+              <p>Required for signing in, keeping your basket updated and protecting against fraud.</p>
+            </div>
+            <div>
+              <strong>Analytics</strong>
+              <p>Help us understand popular dishes and improve delivery times. Disabled until you accept cookies.</p>
+            </div>
+            <div>
+              <strong>Marketing</strong>
+              <p>Used to show personalised deals on partner platforms. Disabled until you accept cookies.</p>
+            </div>
+          </div>
+          <p class="muted">You can withdraw or update your consent at any time.</p>
+          <ul>
+            <li>Clear or block cookies in your browser preferences to reset consent.</li>
+            <li>Use the <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener noreferrer" target="_blank">Google Analytics opt-out extension</a> to disable analytics tracking.</li>
+            <li>Email <a href="mailto:hello@b2dkitchen.ng">hello@b2dkitchen.ng</a> to request that we remove marketing identifiers.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer" role="contentinfo">
       <div class="container footer-top">
@@ -187,12 +215,12 @@
     </div>
   </div>
 
-  <div class="card" data-cookie-banner hidden style="position:fixed;left:1.5rem;right:1.5rem;bottom:1.5rem;z-index:1200;max-width:560px;margin:auto;">
+  <div class="card cookie-banner stack-sm" data-cookie-banner hidden>
     <h3>Cookie Consent</h3>
     <p>We use cookies to personalise content, deliver better ads and improve your experience.</p>
-    <div class="flex gap-md">
-      <button class="button button-primary">Accept</button>
-      <button class="button button-secondary">Manage</button>
+    <div class="cookie-banner__actions">
+      <button class="button button-primary" data-cookie-accept type="button">Accept</button>
+      <a class="button button-secondary" href="#cookies" data-cookie-manage>Manage</a>
     </div>
   </div>
 
